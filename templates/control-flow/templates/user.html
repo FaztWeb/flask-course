@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Control FLow in Jinja</title>
+    <style media="screen">
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      table, td, th, .box{
+        padding: 20px;
+        border: 1px solid #000;
+        margin-bottom: 30px;
+      }
+      th {
+        background: #333;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>Data: </h1>
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Age</th>
+            <th>Numbers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{name}}</td>
+            <td>{{age}}</td>
+            <td>{{list}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <div class="box">
+      <h3>We determinate: </h3>
+      {% if age > 18 %}
+        <p>You're of Age. You have {{age}}</p>
+      {% endif %}
+
+      <h3>Your Notes: </h3>
+      <ul>
+        {% for number in list %}
+          <li>{{number}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
