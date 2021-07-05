@@ -1,11 +1,10 @@
-## Instalation
+## Python Course
+this are some basic examples for the python course
 
+## Requeriments
 
-## Course
-- hello-world
-- run method
-  - config the port and debug
-- routes
-  - parameters
-- templates
-  - jinja2
+- Python 3.x
+- Virtual Environment
+	- conda
+	- pipenv
+	- virtualenv 
